@@ -39,7 +39,7 @@ with st.expander("About this app"):
 
 st.subheader("Which Movie Genre performs ($) best at the box office")
 
-df = pd.read_csv("venv/movies_genres_summary.csv")
+df = pd.read_csv("movies_genres_summary.csv")
 df.year = df.year.astype('int')
 
 genres_list = df.genre.unique()
